@@ -1,0 +1,13 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      profile.hmm
+# Target file:     proteome_12.fasta
+# Option settings: hmmsearch --tblout q2a_results.txt profile.hmm proteome_12.fasta 
+# Current dir:     /users/ebrouill/midterm-elle-grady/Downloads/Biocomputing/bioinformatics_project/proteomes
+# Date:            Thu Oct 15 18:33:36 2026
+# [ok]

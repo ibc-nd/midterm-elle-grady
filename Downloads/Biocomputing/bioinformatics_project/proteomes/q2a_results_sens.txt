@@ -1,0 +1,35 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_041487057.1       -          aligned              -              0.067    8.9   0.2      0.14    7.9   0.2   1.4   1   0   0   1   1   1   0 pyruvate carboxylase 
+WP_013361136.1       -          aligned              -               0.14    7.8   0.0       0.2    7.4   0.0   1.1   1   0   0   1   1   1   0 exported protein of unknown function 
+WP_013361917.1       -          aligned              -               0.18    7.5   0.2      0.33    6.7   0.2   1.4   1   0   0   1   1   1   0 elongation factor Ts 
+WP_013360981.1       -          aligned              -               0.45    6.2   0.0      0.49    6.1   0.0   1.0   1   0   0   1   1   1   0 MULTISPECIES: thioredoxin family protein 
+WP_013360249.1       -          aligned              -                1.5    4.5   0.1       2.4    3.8   0.1   1.2   1   0   0   1   1   1   0 histidine ammonia-lyase 
+WP_013361190.1       -          aligned              -                2.2    3.9   0.0       2.9    3.5   0.0   1.1   1   0   0   1   1   1   0 exported protein of unknown function 
+WP_013360689.1       -          aligned              -                2.4    3.8   0.0       2.9    3.5   0.0   1.1   1   0   0   1   1   1   0 hypothetical protein 
+WP_013361496.1       -          aligned              -                3.1    3.4   0.0       3.5    3.2   0.0   1.2   1   0   0   1   1   1   0 formimidoyltetrahydrofolate cyclodeaminase 
+WP_013362434.1       -          aligned              -                3.4    3.3   0.4       4.6    2.9   0.4   1.1   1   0   0   1   1   1   0 thymidylate synthase (FAD) 
+WP_013360863.1       -          aligned              -                3.7    3.2   0.4       4.2    3.0   0.4   1.2   1   0   0   1   1   1   0 MULTISPECIES: triose-phosphate isomerase 
+WP_013362408.1       -          aligned              -                3.9    3.1   0.1       3.6    3.2   0.1   1.1   1   0   0   1   1   1   0 MULTISPECIES: 50S ribosomal protein L23 
+WP_013361322.1       -          aligned              -                4.2    3.0   0.0        19    0.8   0.0   1.6   1   1   0   2   2   2   0 hypothetical protein 
+WP_013361502.1       -          aligned              -                4.4    2.9   0.0       7.3    2.2   0.0   1.2   1   0   0   1   1   1   0 ornithine aminomutase 
+WP_041487390.1       -          aligned              -                5.1    2.7   0.0        13    1.4   0.0   1.5   1   0   0   1   1   1   0 glutamine--tRNA ligase/YqeY domain fusion protein 
+WP_013360681.1       -          aligned              -                5.4    2.6   0.0       5.5    2.6   0.0   1.0   1   0   0   1   1   1   0 DUF2922 domain-containing protein 
+WP_013361711.1       -          aligned              -                5.4    2.6   0.2       7.9    2.1   0.2   1.2   1   0   0   1   1   1   0 type I DNA topoisomerase 
+WP_013362083.1       -          aligned              -                6.8    2.3   0.0       8.4    2.0   0.0   1.1   1   0   0   1   1   1   0 signal peptidase II 
+WP_013361957.1       -          aligned              -                6.9    2.3   0.3       9.9    1.8   0.1   1.2   1   1   0   1   1   1   0 flagellar basal body rod protein FlgB 
+WP_013362016.1       -          aligned              -                7.1    2.3   0.2       6.9    2.3   0.2   1.1   1   0   0   1   1   1   0 MULTISPECIES: 30S ribosomal protein S20 
+WP_013361159.1       -          aligned              -                7.9    2.1   0.0        10    1.7   0.0   1.2   1   0   0   1   1   1   0 MULTISPECIES: methylmalonyl-CoA epimerase 
+WP_013360848.1       -          aligned              -                8.2    2.0   0.0        13    1.4   0.0   1.2   1   0   0   1   1   1   0 amidohydrolase 
+WP_013362443.1       -          aligned              -                8.6    2.0   0.0       8.6    2.0   0.0   1.1   1   0   0   1   1   1   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      profile.hmm
+# Target file:     proteome_01.fasta
+# Option settings: hmmsearch --tblout q2a_results_sens.txt --max profile.hmm proteome_01.fasta 
+# Current dir:     /users/ebrouill/midterm-elle-grady/Downloads/Biocomputing/bioinformatics_project/proteomes
+# Date:            Thu Oct 15 18:59:33 2026
+# [ok]
