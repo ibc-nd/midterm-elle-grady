@@ -15,7 +15,7 @@ c) # This was the smallest E value: 0.067. That means nothing we found was signi
 # We moved files, wrote a draft of the code, tested it for both hsp70 files first, and then edited the code to accept a command (run for either mcrA or hsp70). 
 
 4) a) # Ran the script twice, using 1) hsp70 and 2) mcrA as arguments.
-b) #
+b) # The proteomes were screened for the presence of mcrA genes and hsp70 genes. Both proteome 19 and 23 possessed two mcrA genes. There was a large portion that did not possess any mcrA genes. When screening for the hsp70, there were many matches. Proteomes 18 and 22 both matched 7 different hsp70 genes. On the flip side, proteomes 2,6,17,28,29,33,40, and 46 possess no hsp70 genes. While proteomes 18 and 22 possess high amounts of hsp genes, they do not possess any mcrA genes. For the total investigation into these archaea, a good candidate will possess at least one mcrA gene and more than one copy of hsp70 gene. Proteome 23 has 2 mcrA genes and 2 hsp70 genes. This archaea isolate could be futher tested to determine methanogenesis and pH resistance. 
 c) # For the McrA gene, any hits indicate the given proteome is methanogenic, i.e. capable of performing methanogenesis. Every hit of hsp70 (copies of the hsp70 gene present) indicates
 futher ability for the proteome to adapt to stress. More copies suggest greater pH resistance. Combining the list of proteomes with positive hit counts for both show which proteomes
 are pH-resistant methanogenic Archaea. 
@@ -28,3 +28,7 @@ b) # An HMM profile is more flexible and will conserve more data than a BLAST qu
 for variable positions that tolerate differences in the sequence. A BLAST query will exclude all data that does not exactly match the given reference sequence; all positions 
 and substitutions are treated as uniform scoring matrices, regardless of their biological properties/functions. Using HMM profiles for multiple sequences will significantly  
 reduce the risk of false negatives.  
+
+
+# see below for git log --oneline
+
