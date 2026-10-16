@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_048118742.1       -          aligned_hsp          -                  0 1098.5  23.8         0 1098.4  23.8   1.0   1   0   0   1   1   1   1 MULTISPECIES: molecular chaperone DnaK 
+WP_048116754.1       -          aligned_hsp          -           8.3e-110  365.5   9.1  2.8e-100  334.0   3.7   2.0   2   0   0   2   2   2   2 MULTISPECIES: hypothetical protein 
+WP_048116752.1       -          aligned_hsp          -           1.5e-106  354.7  13.5     2e-99  331.2   6.6   2.0   2   0   0   2   2   2   2 MULTISPECIES: Hsp70 family protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      profile_hsp.hmm
+# Target file:     ../proteomes/proteome_50.fasta
+# Option settings: hmmsearch --tblout pipeline_results_hsp.csv profile_hsp.hmm ../proteomes/proteome_50.fasta 
+# Current dir:     /users/gjacobs3/midterm-elle-grady/Downloads/Biocomputing/bioinformatics_project/Q3
+# Date:            Thu Oct 15 20:25:47 2026
+# [ok]
