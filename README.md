@@ -5,7 +5,8 @@ We used both muscle and hmmer to align the sequences and create a profile to run
 The results show that there are a few candidates that possess both the mcrA gene and at least one hsp70 gene. The arachaea that these proteomes belong to would better equipped to withstand higher pH and perform methanogenesis.
 
 # see below for git log --oneline
-5407fe9 (HEAD -> main, origin/main, origin/HEAD) Grady: Added assignment06 text file
+1f190cd (HEAD -> main, origin/main, origin/HEAD) Grady: Final Script Version: Added Filter
+5407fe9 Grady: Added assignment06 text file
 89d4eb0 Grady: Finalizing script for Q3 and updating READme.md
 c647434 Elle: removed old README
 2551486 Add files via upload
