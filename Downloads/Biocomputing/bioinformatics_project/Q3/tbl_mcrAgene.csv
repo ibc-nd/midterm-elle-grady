@@ -10,5 +10,5 @@ WP_048120720.1       -          aligned_mcrAgene     -                  0 1115.4
 # Target file:     ../proteomes/proteome_50.fasta
 # Option settings: hmmsearch --tblout tbl_mcrAgene.csv profile_mcrAgene.hmm ../proteomes/proteome_50.fasta 
 # Current dir:     /users/gjacobs3/midterm-elle-grady/Downloads/Biocomputing/bioinformatics_project/Q3
-# Date:            Fri Oct 16 16:58:06 2026
+# Date:            Fri Oct 16 18:34:34 2026
 # [ok]
