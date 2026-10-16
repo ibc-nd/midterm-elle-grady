@@ -1,0 +1,30 @@
+1. # Connected to CRC and established git repo
+a) cat mcrAgene_0*.fasta>combined_reference_sequences.fasta
+muscle -align combined_reference_sequences.fasta -output aligned.afa
+# aligned.afa was the output. Afa files are input into hmmer for profile building.
+b) hmmbuild profile.hmm aligned.afa
+# name of profile = profile.hmm
+
+2 a) hmmsearch --tblout q2a_results.txt profile.hmm proteome_01.fasta
+b) # 0 hits. We didn’t filter because we have 0 hits. We had to look up how to se>
+c) # This was the smallest E value: 0.067. That means nothing we found was signif>
+# This is a command that would have worked to filter with grep: “grep -v "^#" res>
+
+3) # Created a script in Q3 directory.
+# Copied combined_ref_hsp.fasta, combined_ref_mcrA.fasta, and our script into a n>
+# We moved files, wrote a draft of the code, tested it for both hsp70 files first>
+
+4) a) # Ran the script twice, using 1) hsp70 and 2) mcrA as arguments.
+b) # The proteomes were screened for the presence of mcrA genes and hsp70 genes. >
+c) # For the McrA gene, any hits indicate the given proteome is methanogenic, i.e>
+futher ability for the proteome to adapt to stress. More copies suggest greater p>
+are pH-resistant methanogenic Archaea. 
+
+5) a) # Pairwise alignment (muscle) compares two individual sequences directly wi>
+sequences have high similarity, and the researcher wants to find perfectly matchi>
+# Profile-based searching (hmmer) uses a probability model to quickly compare mul>
+wants to investigate the probability of structural similarities across genes.
+b) # An HMM profile is more flexible and will conserve more data than a BLAST que>
+for variable positions that tolerate differences in the sequence. A BLAST query w>
+and substitutions are treated as uniform scoring matrices, regardless of their bi>
+reduce the risk of false negatives.
