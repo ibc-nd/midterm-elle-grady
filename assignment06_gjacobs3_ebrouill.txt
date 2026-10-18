@@ -6,25 +6,22 @@ b) hmmbuild profile.hmm aligned.afa
 # name of profile = profile.hmm
 
 2 a) hmmsearch --tblout q2a_results.txt profile.hmm proteome_01.fasta
-b) # 0 hits. We didn’t filter because we have 0 hits. We had to look up how to se>
-c) # This was the smallest E value: 0.067. That means nothing we found was signif>
+b) # 0 hits. We didn’t filter because we have 0 hits. We had to look up how to see the E values shown if they were above the threshold. Looking back now, there must have been errors in the code to not generate a hit. 
+c) # This was the smallest E value: 0.067. That means nothing we found was significant enough to consitute a "hit". E value is expected value and it is a measure of how well the sequences align. The lower the E value level, the more confident that the results are true. 
 # This is a command that would have worked to filter with grep: “grep -v "^#" res>
 
-3) # Created a script in Q3 directory.
-# Copied combined_ref_hsp.fasta, combined_ref_mcrA.fasta, and our script into a n>
-# We moved files, wrote a draft of the code, tested it for both hsp70 files first>
+3) # Created a script in Q3 directory. See run_pipeline.sh for compelete script.
+# Copied combined_ref_hsp.fasta, combined_ref_mcrA.fasta, and our script into a new directory. 
+# We moved files, wrote a draft of the code, tested it for both hsp70 files first.
 
 4) a) # Ran the script twice, using 1) hsp70 and 2) mcrA as arguments.
-b) # The proteomes were screened for the presence of mcrA genes and hsp70 genes. >
-c) # For the McrA gene, any hits indicate the given proteome is methanogenic, i.e>
-futher ability for the proteome to adapt to stress. More copies suggest greater p>
-are pH-resistant methanogenic Archaea. 
+b) # The proteomes were screened for the presence of mcrA genes and hsp70 genes. There were two proteomes that had two hits for the mcrA gene, and a large portion had zero hits. For the hsp70gene, there were a couple of proteomes that had 7 hits, with the majority of proteomes having at least one hit. See the pipeline_results.csv to see which proteomes had hits for both mcrA genes. 
+c) # For the McrA gene, any hits indicate the given proteome is methanogenic. The hsp70 hits indicate that the archae possess a greater defense against a low pH. In combination, an archaea that can perform methanogenesis and surivive lower pH is best equipped to survive in the investigated environment. 
 
-5) a) # Pairwise alignment (muscle) compares two individual sequences directly wi>
-sequences have high similarity, and the researcher wants to find perfectly matchi>
-# Profile-based searching (hmmer) uses a probability model to quickly compare mul>
+5) a) # Pairwise alignment (muscle) compares two individual sequences directly with matches indicating a similarity. The similarities indicate relationships, and these relationships are then used to investigate unknown sequences. 
+# Profile-based searching (hmmer) uses a probability model to quickly compare multiple references sequences to an unknow sequence. Pairwise alignemnt creates the "guide" that will be used to compare to unknowns. The profile based-searching uses the guide to investigate an unknown. These two are used in conjuction to first generate a reference and then search with that reference as a guide. 
 wants to investigate the probability of structural similarities across genes.
-b) # An HMM profile is more flexible and will conserve more data than a BLAST que>
-for variable positions that tolerate differences in the sequence. A BLAST query w>
-and substitutions are treated as uniform scoring matrices, regardless of their bi>
-reduce the risk of false negatives.
+b) # An HMM profile is more flexible and will conserve more data than a BLAST query. A BLAST query is going to try to match the unknow sequence to one singular sequence, whereas the hmm profile can adjust for the slight variabilites that may be present. Point mutations may occur that do not affect the outcome of transcription and translation. BLAST would show an issue matching a mutation, but the hmm profile would account for this variability if a previous sequence also shared the variability. Overall, greater reference sequences allows for a greater match confidence to unknown sequences. 
+
+
+#Sorry for the confusion with this Neil. I had to rewrite the answers since the original ones were lost when I moved them from the README. I answered the questions in different words, but the exact same way we answered them before. Thanks for reaching out and let me know if anything else is needed to remedy this. -GJ
